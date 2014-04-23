@@ -7,8 +7,7 @@
 ## Release 0: Student Roster Schema
 Image one:
 
-![Student Roster Schema](https://github.com/lrakhman/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
-
+![Student Roster Schema](https://github.com/lrakhman/phase_0_unit_3/blob/master/week_7/images/Screen%20Shot%202014-04-22%20at%2011.51.06%20PM.png)
 
 
 ## Release 1: One to Many Schema
