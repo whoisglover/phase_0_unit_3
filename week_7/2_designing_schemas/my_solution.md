@@ -7,7 +7,7 @@
 ## Release 0: Student Roster Schema
 Image one:
 
-![Student Roster Schema](https://github.com/lrakhman/phase_0_unit_3/blob/master/week_7/images/Screen%20Shot%202014-04-22%20at%2011.51.06%20PM.png?raw=true)
+![Student Roster Schema](https://github.com/lrakhman/phase_0_unit_3/blob/master/week_7/images/student%20roster%20schema.png?raw=true)
 
 
 ## Release 1: One to Many Schema
