@@ -12,7 +12,7 @@ Image one:
 
 ## Release 1: One to Many Schema
 <!-- display your image inline here -->
-
+![One to Many Schema](https://github.com/lrakhman/phase_0_unit_3/blob/master/week_7/images/One%20to%20Many%20Schema.png)
 
 ## Release 2: One to One Schema
 <!-- display your image inline here -->
