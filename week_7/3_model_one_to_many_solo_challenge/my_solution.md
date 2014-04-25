@@ -24,7 +24,7 @@ The relationship between `users` and `tweets` is:
 Each user has many tweets, but each tweet belongs to only one user, so it's a one-to-many relationship. 
 
 ## Release 3: Schema Design
-![My One to One, and Many to Many Schemas](https://github.com/lrakhman/phase_0_unit_3/blob/master/week_7/images/My%20own%20schemas.png?raw=true)
+![Twitter One to Many Schema](https://github.com/lrakhman/phase_0_unit_3/blob/master/week_7/images/Twitter%20One%20to%20Many%20Schema.png?raw=true)
 
 ## Release 4: SQL Statements
 <!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
