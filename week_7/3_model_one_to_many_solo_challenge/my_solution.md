@@ -15,8 +15,8 @@
 ## Release 1: Tweet Fields
 
 1. Text (upto 140 characters, but at least 1 character)
-2. Reply to individual tweet
-3. Re-tweet individual tweet
+2. Photo
+3. Location
 
 ## Release 2: Explain the relationship
 The relationship between `users` and `tweets` is: 
@@ -28,6 +28,7 @@ Each user has many tweets, but each tweet belongs to only one user, so it's a on
 
 ## Release 4: SQL Statements
 <!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
+
 
 ## Release 5: Reflection
 <!-- Be sure to add your reflection here!!! -->
