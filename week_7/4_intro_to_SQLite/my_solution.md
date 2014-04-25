@@ -11,7 +11,6 @@ sqlite> CREATE TABLE users (
    ...>   created_at DATETIME NOT NULL,
    ...>   updated_at DATETIME NOT NULL
    ...> );
-
 ```
 ## Release 1: Insert Data 
 
@@ -25,12 +24,13 @@ id          first_name  last_name   email                  created_at           
 ```
 ## Release 2: Multi-line commands
 
+```
 sqlite> INSERT INTO users
    ...> (first_name, last_name, email, created_at, updated_at)
    ...> VALUES
    ...> ('Kimmey', 'Lin', 'kimmy@devbootcamp.com', DATETIME('now'), DATETIME('now'));
 Error: column email is not unique
-
+```
 ## Release 3: Add a column
 <!-- paste your terminal output here -->
 
