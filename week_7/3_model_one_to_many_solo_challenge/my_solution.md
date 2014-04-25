@@ -28,7 +28,8 @@ Each user has many tweets, but each tweet belongs to only one user, so it's a on
 
 ## Release 4: SQL Statements
 <!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
-
+1. SELECT Count(text_content) FROM tweets WHERE user_id = 2
 
 ## Release 5: Reflection
-<!-- Be sure to add your reflection here!!! -->
+
+This was a good exercise, but the SQL statements part was the only one that gave me trouble. I'm not really comfortable with them yet, and because I can't see the results, I'm not sure that they're even right. I ended up trying to research join, since that seems to be how to get info from more than one table, but it only confused me further. Oh well, patience and practice, I guess. 
