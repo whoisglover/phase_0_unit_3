@@ -28,7 +28,10 @@ Each user has many tweets, but each tweet belongs to only one user, so it's a on
 
 ## Release 4: SQL Statements
 <!-- Include your SQL Statements. How can you make markdown files show blocks of code? -->
-1. SELECT Count(text_content) FROM tweets WHERE user_id = 2
+1. SELECT * FROM tweets WHERE user_id = 1 (or any number)
+2. SELECT * FROM tweets WHERE created_at >= '4/15/2014 12:00:00 AM' 
+3. SELECT * FROM tweets JOIN users ON user_id = id WHERE twitter_handle = "lrock"
+4. SELECT twitter_handle FROM users JOIN tweets ON id = user_id WHERE id = 5
 
 ## Release 5: Reflection
 
