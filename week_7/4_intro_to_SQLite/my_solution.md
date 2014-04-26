@@ -20,7 +20,6 @@ id          first_name  last_name   email                  created_at           
 ----------  ----------  ----------  ---------------------  -------------------  -------------------
 1           Kimmey      Lin         kimmy@devbootcamp.com  2014-04-25 21:13:37  2014-04-25 21:13:37
 2           Lana        Rakhman     lana.rakhman@gmail.co  2014-04-25 21:15:11  2014-04-25 21:15:11
-
 ```
 ## Release 2: Multi-line commands
 
@@ -86,4 +85,5 @@ id          first_name  last_name   email                  created_at           
 2           Lana        Rakhman     lana.rakhman@gmail.co  2014-04-26 20:33:38  2014-04-26 21:07:01  CODE GENIUS
 ```
 ## Release 5: Reflect
-<!-- Add your reflection here -->
+
+This was fun! Although I ran into a slight problem with the 'null' vs 'not null', it's nice to know that there is so much help for this online (and on stackoverflow.com). This was also an awesome learning exercise, because as someone that has no previous experience with database stuff, I can now: make a table, update a table, delete a table, delete parts of a table, query a table, and understand what a schema is! That's a lot of great stuff to know; I'm sure it gets more complicated in the future, but yay for this much knowledge so far!
