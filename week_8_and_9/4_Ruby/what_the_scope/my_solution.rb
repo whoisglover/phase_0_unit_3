@@ -14,8 +14,7 @@ $var_1 = 22
 class Person
   @@var_2
   VAR_6 = "Ruby"
- 
-  attr_reader :var_3, :var_4
+  attr_reader :var_3, :var_4,
  
   def initialize(var_5 = VAR_6)
     @var_3="Law of Demeter"  
@@ -26,7 +25,17 @@ class Person
       var_9 += var_8 + 2
     end
   end
+
+  def show
+   p $var_1
+   p defined? VAR_6
+  end
 end
+
+p1 = Person.new
+
+
+Person.var_2 = 6
 
 # 3. Modified Code (with scope identified as comments)
 
