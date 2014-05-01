@@ -33,7 +33,9 @@ end
 
 # 4. Refactored Solution
 
-
+# We thought our code was pretty concise for using a looping method, 
+# as opposed to using recursion. There's not really a way that we can 
+# see too simply even further. 
 
 
 
@@ -53,3 +55,9 @@ p is_fibonacci?(-923478347) == false
 
 
 # 5. Reflection 
+
+# This was a fairly easy challenge, code-wise. I implemented it differently before,
+# but working with Catherine was great because we constructed a method that was way
+# simpler than what I'd done before. I don't usually use the until loop, but I think
+# it works for this particular challenge. I'm very interested in being able to 
+# discern when to use what; meaning, when to use an iterator vs. a loop vs. black magic.
