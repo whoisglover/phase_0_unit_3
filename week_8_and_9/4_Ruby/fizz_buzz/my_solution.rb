@@ -5,6 +5,13 @@
 
 # 2. Pseudocode
 
+# 1. create method super_fizzbuzz with a single argument (which should be an array)
+# 2. map across the array checking if each element is divisible by 15, 5, and 3
+# 3. if number is divisible by 15, replace it with "FizzBuzz"
+# 4. if number is divisible by 5, replace it with "Buzz"
+# 5. if number is divisible by 3, replace it with "Fizz"
+# 6. put all that in an if statement
+
 
 
 # 3. Initial Solution
@@ -27,12 +34,20 @@ end
 
 # 4. Refactored Solution
 
-
+# I'm honestly not sure how to make this any simpler. 
 
 
 
 
 # 1. DRIVER TESTS/ASSERT STATEMENTS GO BELOW THIS LINE
+
+array1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+array2 = [5, 10, 15, 20, 25, 30, 35, 40]
+array3 = [45, 10, 17, 3, 9, 50, 11, 18, 12, 0]
+
+p super_fizzbuzz(array1) == [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz"]
+p super_fizzbuzz(array2) == ["Buzz", "Buzz", "FizzBuzz", "Buzz", "Buzz", "FizzBuzz", "Buzz", "Buzz"]
+p super_fizzbuzz(array3) == ["FizzBuzz", "Buzz", 17, "Fizz", "Fizz", "Buzz", 11, "Fizz", "Fizz", "FizzBuzz"]
 
 
 
