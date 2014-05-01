@@ -55,3 +55,11 @@ p super_fizzbuzz(array3) == ["FizzBuzz", "Buzz", 17, "Fizz", "Fizz", "Buzz", 11,
 
 
 # 5. Reflection 
+
+# I had solved this problem a while ago, but it wasn't nearly as concise (I lost
+# the original code though). I figured out that the order matters when implementing
+# this if statement; if I had put 3, then 5, then 15, it wouldn't have returned the 
+# desired results. I'm not sure this is the best way to structure it; meaning, if 
+# the order matters, is this the best way to code it, or am I just using some sort of
+# trick? Shouldn't the order not matter in this situation? Or maybe it should, and
+# I'm just doubting myself for no reason. I can't wait for some discussion on such topics!
