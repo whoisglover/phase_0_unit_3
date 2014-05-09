@@ -124,3 +124,7 @@ id          city_name   state_name  created_at           updated_at
 4           Seattle     WA          2014-05-09 19:35:24  2014-05-09 19:35:24
 5           Austin      TX          2014-05-09 19:35:57  2014-05-09 19:35:57
 ```
+
+Reflection:
+
+This was great practice. However, I still have some questions. I'm pretty sure I "joined" the tables together through the FOREIGN KEY/REFERENCES commands, but I'm really not sure. I researched this quite a bit online, and every time I would search the word 'join' the results were not what I was looking for. I then researched how to make a foreign key (which is what I assume the assignment is asking us to do, although the instructions are poorly worded), and so the above is what I found. I hope it's right!
