@@ -32,4 +32,4 @@ I decided to model a school.  For the many to many I represent classes and stude
 ![image](../imgs/my_many_to_many.jpg)
 
 ## Release 5: Reflection
-	
+This was a fun challenge.  Creating relational databases was part of my last job and I really enjoyed it.  My boss was a huge stickler for avoiding duplication of data.  This has given me some good habits for creating schemas that I’ve noticed a few of my peers at school don’t worry about.  I didn’t have any trouble completing this challenge and I didn’t use any resources outside of the instructions and examples provided on github.  I feel good about the learning competencies for this challenge.  On to the next one!
