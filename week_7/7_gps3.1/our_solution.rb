@@ -133,3 +133,13 @@ end
 
 
 # Reflection 
+=begin
+This was a very successful pairing session with Sherwood.
+We spent a good amount of time on our user stories and pseudocode before jumping into the code itself.  
+It’s always nice when my pairing sessions focus heavily on pseudocode first, it really reduces confusion a
+nd ambiguity when we get to coding.  We decided to use a hash with an array in the value slot.  I think 
+there is probably a more elegant way to store this data because it gets a little tricky to remember what
+is represented in each slot of the array.  That being said we were able to make a fully functioning 
+grocery list.  I think we both felt good about the code and we both got to contribute evenly.  I feel
+confident with the learning competencies for this challenge.
+=end
