@@ -4,7 +4,11 @@ Unit 3 only has one week of new material and two weeks of collaborative review. 
 
 ### [Week 7: HTML/CSS](week_7)
 ### [Week 8 and 9: REVIEW!](week_8_and_9)
-TESTING FROM LOCAL
+TESTING FROM LOCAL -command line
+
+TESTING FROM LOCAL -app
+
+
 ## Unit Goals
 - [Peer-Pair program](https://github.com/Devbootcamp/phase_0_handbook/blob/master/peer-pairing_sessions.md) at least 4 times with people in your accountability group. Read about [pairing](https://github.com/Devbootcamp/phase_0_handbook/blob/master/pairing_in_phase_0.md) before hand. 
 - [Submit feedback](https://socrates.devbootcamp.com/feedback/new) for all pairing sessions. (You should submit at least 4 for peer sessions and 2 for [GPS 3.1](https://github.com/Devbootcamp/phase_0_handbook/blob/master/guided_pairing_sessions.md))
