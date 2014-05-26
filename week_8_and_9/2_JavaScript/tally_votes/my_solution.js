@@ -1,6 +1,6 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge by myself.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -65,27 +65,70 @@ var officers = {
 
 // Pseudocode
 
+// for first function:
+
+// set var to counter function
+// loop using for .. in loop
+// loop using another nested for .. in loop
+
+// for second function:
+
+// set var winner as a function
+// let voteCount be an argument
+// loop through each nested object in voteCount
+// store all votes in an array
+// sort the array
+// take the highest value
+// push that value into officers object
+
 
 // __________________________________________
 // Initial Solution
 
+var countVotes = function(){
+  for (var student in votes){
+    var picks = votes[student];
+    for (var position in picks){
+      if(!voteCount[position][picks[position]]){
+        voteCount[position][picks[position]] = 0;
+      }
+        voteCount[position][picks[position]]++;
+    }
+  }
+}
 
+countVotes();
 
+var winners = function(){
+  for (var mostVotes in voteCount){
+    var numVotes = 0;
 
+    for (var person in voteCount[mostVotes]){
+      if (voteCount[mostVotes][person] > numVotes ){
+        numVotes = voteCount[mostVotes][person];
+        officers[mostVotes] = person;
+      }
+    }
+  }
+}
+
+winners();
 
 
 
 // __________________________________________
 // Refactored Solution
 
-
-
-
+// FML.
 
 
 // __________________________________________
 // Reflection
 
+// This was a difficult exercise. It was difficult mostly because I was writing it in
+// JavaScript, and I've already discussed how I lack understanding in JS. Not much more
+// to say other than the only way I solved this was by looking at examples of solutions
+// and going from there.
 
 
 
