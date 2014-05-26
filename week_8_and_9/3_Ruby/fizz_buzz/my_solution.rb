@@ -68,11 +68,19 @@ p array3
 
 
 # 5. Reflection 
-
-# I had solved this problem a while ago, but it wasn't nearly as concise (I lost
-# the original code though). I figured out that the order matters when implementing
-# this if statement; if I had put 3, then 5, then 15, it wouldn't have returned the 
-# desired results. I'm not sure this is the best way to structure it; meaning, if 
-# the order matters, is this the best way to code it, or am I just using some sort of
-# trick? Shouldn't the order not matter in this situation? Or maybe it should, and
-# I'm just doubting myself for no reason. I can't wait for some discussion on such topics!
+=begin
+What parts of your strategy worked? What problems did you face?
+-Looping thru the array worked well and the #map method was the best choice for modifying the numbers to words.
+What questions did you have while coding? What resources did you find to help you answer them?
+-I didn't have any questions while coding on this, but the #map method is slightly new to me.  This challenge made me feel more comfortable with using it.
+What concepts are you having trouble with, or did you just figure something out? If so, what?
+-I'm not having trouble with any of the concepts, but still really enjoying ruby's awesomeness!
+Did you learn any new skills or tricks?
+-I didn't learn anything totally new but like I mentioned before I feel much bettter about the #map and #map! methods now.
+How confident are you with each of the Learning Competencies?
+- I feel very confident with the learning competencies.
+Which parts of the challenge did you enjoy?
+- I enjoyed the logic required to make it work right, ordering was important here.
+Which parts of the challenge did you find tedious?
+- I didn't find any parts of the challenge tedious.
+=end
