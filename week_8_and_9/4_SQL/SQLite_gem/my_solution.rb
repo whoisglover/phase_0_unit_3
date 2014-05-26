@@ -16,13 +16,13 @@ end
 
 def print_longest_serving_reps(minimum_years)  
   puts "LONGEST SERVING REPRESENTATIVES"
-  reps = $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years}")
+  reps = $db.execute("SELECT name, years_in_congress FROM congress_members WHERE years_in_congress > #{minimum_years} ORDER BY years_in_congress DESC")
   reps.each { |rep, years| puts "#{rep} - #{years} years" }
 end
 
 def print_lowest_grade_level_speakers(grade_level)
   puts "LOWEST GRADE LEVEL SPEAKERS (less than < 8th grade)"
-  reps = $db.execute("SELECT name, grade_current FROM congress_members WHERE grade_current < #{grade_level}")
+  reps = $db.execute("SELECT name, grade_current FROM congress_members WHERE grade_current < #{grade_level} ORDER BY grade_current DESC")
   reps.each { |rep, grade| puts "#{rep}, #{grade}" }
 end
 
@@ -79,10 +79,23 @@ print_lowest_grade_level_speakers(8)
 
 
 # REFLECTION- Include your reflection as a comment below.
+=begin
+To get this code running I had to uninstall the sqlite3 gem and reinstall with this line: 
+sudo gem install sqlite3 -- --with-sqlite3-dir=/sw
+
+
+Also I added a few ORDER BY statments to the SQL queries to make them meet their goals better (sorting data by values)
+
 # How does the sqlite3 gem work?  What is the variable `$db` holding?  
+Sqlite3 gem works as a connection between the ruby program and the SQL databse.  $db holds the name/location of the actualy database in the directory so the program can access it.  This allows the program to execute SQL queries.
 # Try to use your knowledge of ruby and OO to decipher this as well as h
 # ow the `#execute` method works.  Take a stab at explaining the line 
 # `$db.execute("SELECT name FROM congress_members WHERE years_in_congress 
 #   > #{minimum_years}")`.  Try to explain this as clearly as possible for 
 # your fellow students.  
+
+This is a pure mix of ruby and SQL.  Execute runs the SQL query on the database stored in db. 
+ The ruby comes in where #{minimum_years} is typed to put the method argument variable directly into the SQL statement. 
+This power in ruby is really awesome. This SQL query will return the names of the congress members that have been in congress longer than the inputed amount of time.
 # If you're having trouble, find someone to pair on this explanation with you.
+=end
