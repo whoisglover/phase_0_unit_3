@@ -7,7 +7,7 @@ variables match (i.e., 'Joseph' is the first element in students; his scores are
 
 Do not alter the students and scores code.
 
-I worked on this challenge [by myself, with:]
+I worked on this challenge by myself.
 
 */
 
@@ -26,6 +26,55 @@ var scores = [ [80, 70, 70, 100],
 // __________________________________________
 // Write your code below.
 
+var average = function(scores){
+
+
+  var total = 0.0
+  for (var i = scores.length - 1; i >= 0; i--) {
+      total += scores[i]
+  };
+  return total/scores.length
+
+}
+
+var gradebook = {
+  Joseph: {testScores: scores[0]},
+  Susan: {testScores: scores[1]},
+  William: {testScores: scores[2]},
+  Elizabeth: {testScores: scores[3]},
+  addScore: function(name, score){
+    switch(name){
+    case 'Joseph':
+        this.Joseph.testScores.push(score)
+        break;
+    case 'Susan':
+        this.Susan.testScores.push(score)
+        break;
+    case 'William':
+        this.William.testScores.push(score)
+        break;
+    case 'Elizabeth':
+        this.Elizabeth.testScores.push(score)
+        break;
+    }
+  },
+  getAverage: function(name){
+    switch(name){
+    case 'Joseph':
+        return average(this.Joseph.testScores)
+        break;
+    case 'Susan':
+        return average(this.Susan.testScores)
+        break;
+    case 'William':
+        return average(this.William.testScores)
+        break;
+    case 'Elizabeth':
+        return average(this.Elizabeth.testScores)
+        break;
+    }
+  }
+};
 
 
 
@@ -33,9 +82,7 @@ var scores = [ [80, 70, 70, 100],
 
 // __________________________________________
 // Refactored Solution
-
-
-
+// I dont think I need to refactor my code at all.  It's extremely DRY and efficient. All my variable names are obvious and all the driver tests are passing.
 
 
 
@@ -45,7 +92,22 @@ var scores = [ [80, 70, 70, 100],
 // Reflect
 
 
-
+// What parts of your strategy worked? What problems did you face?
+// After reading the instructions I let the driver code guide my coding.  I really like having these detailed driver code assert statements.
+// It felt good to get one to pass and move on to the next part.  By the end I had everything working to find the students average and simply had to put the pieces together.
+// What questions did you have while coding? What resources did you find to help you answer them?
+// I had a few questions on Javascript syntax, on things like self vs this.  Also I was a little rusty on creating functions inside of objects and objects inside of objects.
+// W3 schools was great for clearing up these questions quickly.
+// What concepts are you having trouble with, or did you just figure something out? If so, what?
+// I'm not having trouble with any concepts in this challenge.
+// Did you learn any new skills or tricks?
+// I learned that you can put objects in objects as properties which seems really interesting to me.
+// How confident are you with each of the Learning Competencies?
+// I feel very confident with the Learning Competencies.
+// Which parts of the challenge did you enjoy?
+// I really enjoyed having the strong driver code to guide me step by step as I developed the object's functionality.
+// Which parts of the challenge did you find tedious?
+// I didn't find any part of this challenge tedious.
 
 
 
