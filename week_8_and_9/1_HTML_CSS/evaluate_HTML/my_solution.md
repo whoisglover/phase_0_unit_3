@@ -21,7 +21,7 @@ Did you like the way they used HTML tags?  Please use examples with your argumen
                                 </td>
                                 <td>
                                     <center>
-                                        <a id="up_7801834" href="vote?for=7801834&amp;dir=up&amp;whence=%6e%65%77%73" name="up_7801834"></a>
+                                        <a id=up7801834 href=vote?for=7801834&amp;dir=up&amp;whence=%6e%65%77%73 name=up_7801834"></a>
                                         <div class="votearrow" title="upvote"></div><span id="down_7801834"></span>
                                     </center>
                                 </td>
