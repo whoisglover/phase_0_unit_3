@@ -15,24 +15,11 @@ it does not?  Provide examples of the "bad" code.
 Did you like the way they used HTML tags?  Please use examples with your arguments.
  - I don't necessarily like or dislike the way they used html tags, it was really quite standard since the entire page was pretty much tables.  I guess I did like this simplicity.. example:
    
-     <table border="0" cellpadding="0" cellspacing="0">
-                    <tr>
+    <table border="0" cellpadding="0" cellspacing="0">
+                            <tr>
                                 <td align="right" valign="top" class="title">
                                     1.
                                 </td>
-                                <td>
-                                    <center>
-                                        <a id=up7801834 href=vote?for=7801834&amp;dir=up&amp;whence=%6e%65%77%73 name=up_7801834"></a>
-                                        <div class="votearrow" title="upvote"></div><span id="down_7801834"></span>
-                                    </center>
-                                </td>
-                                <td class="title">
-                                    <a href="https://medium.com/p/2a7af4788b10">Python 3 can revive Python</a> <span class="comhead">(medium.com)</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"></td>
- - 
 3) How did the authors handle formatting? Did they include it in the HTML or 
 separate it into a CSS file? Or did they do both?  Again, include examples.
  
