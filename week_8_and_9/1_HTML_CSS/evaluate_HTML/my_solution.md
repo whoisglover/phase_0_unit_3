@@ -2,7 +2,14 @@
  
 1) How does this website follow HTML Best Practices? Are there any places where 
 it does not?  Provide examples of the "bad" code.
+ - This page uses tables and divs really well to seperate each part of the page
+ - It seems like a lot of their styling is done inline in the HTML instead of in the CSS page, I was always taught this was bad practice.  Here is an example:
  
+            <table border="0" cellpadding="0" cellspacing="0" width="85%" bgcolor="#F6F6EF">
+                <tr>
+                    <td bgcolor="#FF6600">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" style="padding:2px">
+                            <tr>
 2) What do you think of the HTML? Did the writers use IDs and Classes properly? 
 
 Did you like the way they used HTML tags?  Please use examples with your arguments.
