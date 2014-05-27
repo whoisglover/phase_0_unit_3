@@ -1,7 +1,3 @@
-// U3.W8-9: Gradebook from Names and Scores
-
-// I worked on this challenge by myself.
-
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
   "Alex": { president: "Bob", vicePresident: "Devin", secretary: "Gail", treasurer: "Kerry" },
@@ -64,78 +60,125 @@ var officers = {
 }
 
 // Pseudocode
-
-// for first function:
-
-// set var to counter function
-// loop using for .. in loop
-// loop using another nested for .. in loop
-
-// for second function:
-
-// set var winner as a function
-// let voteCount be an argument
-// loop through each nested object in voteCount
-// store all votes in an array
-// sort the array
-// take the highest value
-// push that value into officers object
-
+//step 1) make a new var, pass votes into it.
+//step 2) new var output should "1" to property in voteCount (selected position, selected candidate) or "+1" to property.
+//step 3) find the largest num of votes for each position out of the given candidates. 
+//step 4) list those candidates in officers.
 
 // __________________________________________
 // Initial Solution
 
-var countVotes = function(){
-  for (var student in votes){
-    var picks = votes[student];
-    for (var position in picks){
-      if(!voteCount[position][picks[position]]){
-        voteCount[position][picks[position]] = 0;
-      }
-        voteCount[position][picks[position]]++;
-    }
-  }
-}
 
-countVotes();
-
-var winners = function(){
-  for (var mostVotes in voteCount){
-    var numVotes = 0;
-
-    for (var person in voteCount[mostVotes]){
-      if (voteCount[mostVotes][person] > numVotes ){
-        numVotes = voteCount[mostVotes][person];
-        officers[mostVotes] = person;
-      }
-    }
-  }
-}
-
-winners();
 
 
 
 // __________________________________________
 // Refactored Solution
 
-// FML.
 
 
-// __________________________________________
-// Reflection
+var vote_counter = function(vote){
+    for (pos in vote){
+        var choices = vote[pos];
+        //console.log(pos+ " voted for:") 
+        //console.log(choices.president)
+        
+        var pres = choices.president
+        var vp = choices.vicePresident
+        var sec = choices.secretary
+        var tres = choices.treasurer
+        if(voteCount.president[pres] === undefined)
+            voteCount.president[pres] = 1
+        else
+            voteCount.president[pres] += 1
+        
+        if(voteCount.vicePresident[vp] === undefined)
+            voteCount.vicePresident[vp] = 1
+        else
+            voteCount.vicePresident[vp] +=1
+            
+        if(voteCount.secretary[sec] === undefined)
+            voteCount.secretary[sec] = 1
+        else
+            voteCount.secretary[sec] +=1  
+            
+        if(voteCount.treasurer[tres]=== undefined)
+            voteCount.treasurer[tres] = 1
+        else
+            voteCount.treasurer[tres] +=1  
+        
+        
+        
+        //listing each voter
+        //for(i in pos)
+        //console.log(i)
 
-// This was a difficult exercise. It was difficult mostly because I was writing it in
-// JavaScript, and I've already discussed how I lack understanding in JS. Not much more
-// to say other than the only way I solved this was by looking at examples of solutions
-// and going from there.
+        
+        //listing each vote
+    }
+}
+
+vote_counter(votes)
+//console.log(voteCount.president)
+//console.log(voteCount.president.Zach)
 
 
 
+var find_max = function(voteCount){
+    var pres_max = 0
+    var potential_pres_nom = ""
+    var vice_max = 0
+    var potential_vice_nom = ""
+    var sec_max = 0
+    var potential_sec_nom = ""
+    var tres_max = 0
+    var potential_tres_nom = ""
+
+      for (potential_pres_nom in voteCount.president) {
+        if (voteCount.president[potential_pres_nom] > pres_max) {
+          pres_max = voteCount.president[potential_pres_nom];
+          president = potential_pres_nom;
+        }
+        officers.president = president;
+      }
+
+      for (potential_vice_nom in voteCount.vicePresident) {
+        if (voteCount.vicePresident[potential_vice_nom] > vice_max) {
+          vice_max = voteCount.vicePresident[potential_vice_nom];
+          vicePresident = potential_vice_nom;
+        }
+        officers.vicePresident = vicePresident;
+      }
+
+       for (potential_sec_nom in voteCount.secretary) {
+        if (voteCount.secretary[potential_sec_nom] > sec_max) {
+          sec_max = voteCount.secretary[potential_sec_nom];
+          secretary = potential_sec_nom;
+        }
+        officers.secretary = secretary;
+      }
+
+        for (potential_tres_nom in voteCount.treasurer) {
+          if (voteCount.treasurer[potential_tres_nom] > tres_max) {
+            tres_max = voteCount.treasurer[potential_tres_nom];
+            treasurer = potential_tres_nom;
+          }
+          officers.treasurer = treasurer;
+      }
+}
+ 
+ 
+
+      
+
+find_max(voteCount)
+//console.log(officers.president)
+//console.log(officers.vicePresident)
+//console.log(officers.secretary)
+//console.log(officers.treasurer)
 
 
-// __________________________________________
-// Driver Code:  Do not alter code below this line.
+//REFLECTION 
 
 
 function assert(test, message, test_number) {
@@ -147,10 +190,12 @@ function assert(test, message, test_number) {
   return true;
 }
 
+  //console.log(voteCount.president["Bob"])
 assert(
   (voteCount.president["Bob"] === 3),
   "Bob should receive three votes for President.",
   "1. "
+
 )
 
 assert(
@@ -176,7 +221,9 @@ assert(
   "Louise should be elected President.",
   "5. "
 )
-
+//console.log(officers.vicePresident + ": elected vice pres")
+//console.log(voteCount.vicePresident["Hermann"] + " hermann votes")
+//console.log(voteCount.vicePresident["Zane"] + " zane votes")
 assert(
   (officers.vicePresident === "Hermann"),
   "Hermann should be elected Vice President.",
@@ -194,3 +241,6 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+
+
+
