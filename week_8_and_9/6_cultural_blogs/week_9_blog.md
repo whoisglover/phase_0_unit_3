@@ -37,7 +37,7 @@ Consider your experience in Phase 0 to this point. What has been the biggest str
 
 
 ## Release 2: Write your Blog!
-Address the questions above in your blog post. 
+Feedback has been one of the most interesting and rewarding parts about phase 0 of Dev Bootcamp.  Like most things DBC I had no idea what to expect but have been pleasantly surprised by the outcome.  Positive feedback has served as a really nice boost when I'm feeling bogged down in the challenges.  I think the most important feedback however is that which points out things I wasn't doing well.  Specifically things that I wasn't doing well AND didn't realize.  For instance one piece of feedback I received commented on the fact that I was moving too quickly through the code.  While coding alone its obvious to move at the speed your brain wants to, but this isn't the case when someone else is involved.  Hearing this from a peer I had recently worked with helped me realize this and take more notice of the speed at which I was working in my future pairings.  DBC's emphasis on providing kind, specific, and actionable feedback makes hearing negative feedback much easier and lets me change my habits quickly without getting offended by criticism.
 
 ## Release 3: Publish
 Link to your blog on the index of your site and push your changes. 
