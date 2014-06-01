@@ -179,6 +179,12 @@ find_max(voteCount)
 
 
 //REFLECTION 
+// This was a pretty frustrrating, but eventually rewarding challenge.  I paired with Jeuel Wilkerson.  We were having quite a bit of trouble 
+// coming up with the logic to loop through each voter and then figure out who had the most votes.  We used a lot of console.log on this to see
+// what was going on.  After about an hour and a half we had a solution we were both really happy with that worked correctly.
+
+
+
 /*
 
 function assert(test, message, test_number) {
