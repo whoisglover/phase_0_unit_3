@@ -1,9 +1,13 @@
 # U3.W8-9: Implement a Rectangle Class
 
 
-# I worked on this challenge [by myself, with: ].
+# Pairing Session Danny Glover, Andrew Koines Jr
 
 # 2. Pseudocode
+# Create method to find area by multiplying width times height
+#  Create method to perimeter  by adding two times width and  two times height
+#  Create method to find diagonal by pythagorean theorem c = sqrt(a^2 + b^2)
+# Check if square by comparing width and height, if equal then yes square  
 
 
 
@@ -41,9 +45,8 @@ end
 
 
 # 4. Refactored Solution
-
-
-
+# We didnt' feel this code needed any refactoring.  The code is very DRY and all the methods are as simple as they 
+# could be.  
 
 
 
@@ -60,3 +63,5 @@ p rectangle1.perimeter == 44
 
 
 # 5. Reflection 
+# Very good pairing session with Andrew.  We breezed through this challenge and really didnt have any questions.  I am feeling
+# pretty good about Ruby at this point.  I feel confident with all the Learning Competencies thus far.
